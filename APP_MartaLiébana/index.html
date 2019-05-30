@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="jquery-2.2.4.js"></script>
+	<script type="text/javascript" src="code.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<title>app weather</title>
+</head>
+<body>
+
+	
+	<div data-role="page" id="principal" data-theme="a">
+
+		
+		<div data-role="header" class="header">
+				<a href="#circulos" id="atras"><img src="lista.png"></a>
+				<div id="ciudad"></div>
+		</div>
+		
+		
+		<div id="container" data-role="main">
+
+			
+
+			<div class="A">
+					<div id="iconito"></div>
+				<div id="grados"></div>
+				<div id="tiempo"></div>
+				<div id="rango"></div>
+				
+				<div id="viento"></div>
+				<div id="humedad"></div>
+				
+
+			</div> 
+
+				<!--<div class="B">
+				<div class="uno">
+					<h2 class="text" >Ahora</h2>
+					<div><img src="lluvia.png" width="50px" height="50px"></div>
+				</div>
+
+				<div class="dos">
+					<h2 class="text" id="hora1">7:00</h2>
+					<div><img src="lluvia.png" width="50px" height="50px"></div>
+				</div>
+
+				<div class="tres">
+					<h2 class="text" id="hora2">8:00</h2>
+					<div><img src="lluvia.png" width="50px" height="50px"></div>
+				</div>
+
+				<div class="cuatro">
+					<h2 class="text" id="hora3">9:00</h2>
+					<div><img src="lluvia.png" width="50px" height="50px"></div>
+				</div>
+
+				<div class="cinco">
+					<h2 class="text" id="hora4">10:00</h2>
+					<div><img src="lluvia.png" width="50px" height="50px"></div>
+				</div>
+
+				<div class="seis">
+					<h2 class="text" id="hora5">11:00</h2>
+					<div><img src="lluvia.png" width="50px" height="50px"></div>
+				</div>
+
+			</div> 
+
+			
+			<div class="S">
+			<div id="C" >
+					<h2 id="#mañana"></h2>
+					<h2 id="#pasado">Jueves, 24 de Marzo</h2>
+					<h2 id="#pasado1">Jueves, 24 de Marzo</h2>
+					<h2 id="#pasado2">Jueves, 24 de Marzo</h2>
+			</div>
+
+			<div id="D" class="item">
+					<div class="icon"><img src="lluvia.png" width="35px" height="35px"></div>
+					<div class="icon"><img src="lluvia.png" width="35px" height="35px"></div>
+					<div class="icon"><img src="lluvia.png" width="35px" height="35px"></div>
+					<div class="icon"><img src="lluvia.png" width="35px" height="35px"></div>
+			</div>
+
+			<div id="E" >
+					<h2>21º - 19º</h2>
+					<h2>21º - 19º</h2>
+					<h2>21º - 19º</h2>
+					<h2>21º - 19º</h2>
+			</div>
+	        </div>
+			-->
+	    </div> 
+
+	</div>
+
+    <div data-role="page" id="circulos" data-theme="a">
+
+
+        <div data-role="header" class="header">
+			<a href="#principal" class="ui-button" id="atras"><img src="atras.png"></a>
+			<div id="ciudad">Ciudades Guardadas</div>
+		</div>
+		<div class="ui-content" data-role="main">
+				<ul data-role="listview" id="listaguardados" data-inset="true"></ul>
+		</div>   
+		
+		
+		<!--
+   		<div class="Y" data-role="main">
+			<div id="YA" class="items">
+				<div id="grad">
+					<h2 id="gradtx">21º</h2>
+				</div>
+				<div class="ciuta">
+					<img id="local" src="local.png" width="18px" height="18px">
+					<div id="tex"></div>
+				</div>
+			</div>
+			<div id="YB" class="items">
+				<div id="grad">
+					<h2 id="gradtx">21º</h2>
+				</div>
+				<div class="ciuta">
+					<img id="local" src="local.png" width="18px" height="18px">
+					<div id="tex" class="texYB"></div>
+				</div>
+			</div>
+
+
+			<div id="YC" class="items">
+				<div id="grad">
+					<h2 id="gradtx">21º</h2>
+				</div>
+				
+				<div class="ciuta">
+					<img id="local" src="local.png" width="18px" height="18px">
+					<div id="tex"></div>
+				</div>
+			</div>
+
+
+			<div id="YD" class="items">
+				<div id="grad">
+					<h2 id="gradtx">21º</h2>
+
+				</div>
+				
+				<div class="ciuta">
+					<img id="local" src="local.png" width="18px" height="18px">
+					<div id="tex">Madrid</div>
+				</div>
+
+			</div>
+
+
+			<div id="YE" class="items">
+
+				<div id="grad">
+					<h2 id="gradtx">21º</h2>
+
+			</div>
+				
+				<div class="ciuta">
+					<img id="local" src="local.png" width="18px" height="18px">
+					<div id="tex">Madrid</div>
+				</div>
+
+			</div>
+
+
+			<div id="YF" class="items">
+
+				<div id="grad">
+					<h2 id="gradtx">21º</h2>
+
+			</div>
+				
+				<div class="ciuta">
+					<img id="local" src="local.png" width="18px" height="18px">
+					<div id="tex">Madrid</div>
+				</div>
+
+			</div>
+
+			   		 	
+		</div>
+		-->
+
+		<a href="#ciudades" class="Z"><img src="mas.png"></a>		 	
+
+   	</div>
+
+
+
+   	
+	<div data-role="page" id="ciudades" data-theme="a">
+			<div data-role="header" class="X">
+					<form class="ui-filterable" id="lista">
+							<a href="#circulos"><img src="atras.png"></a>
+							<input  id="autocomplete-input" data-type="search" placeholder="...">
+							
+					</form>	
+				</div>  
+				<div class="ui-content" data-role="main">
+						
+					
+							<ul data-role="listview" id="autocomplete" data-inset="true" data-filter="true" data-input="#autocomplete-input"></ul>
+					
+				</div>
+		
+		
+		
+				
+		
+		
+
+    </div>
+
+</body>
+</html>
